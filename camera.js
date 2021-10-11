@@ -9,7 +9,7 @@ var video = document.getElementById("video");
                 alert("error."+err.message);
 }
 
-        var constraints = { audio : false, video : ture } ;
+        var constraints = { audio : false, video : true} ;
         navigator.mediaDevices.getUserMedia(constraints)
                 .then(on_cam_success)
                 .catch(on_cam_error);
